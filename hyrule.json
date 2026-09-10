@@ -1,0 +1,10 @@
+{
+  "$schema": "https://iamjason.github.io/hyrule-compendium-site/schema/hyrule.schema.json",
+  "name": "Kaepora",
+  "command": "kaepora",
+  "tagline": "Sends each link to the browser you choose from your menu bar.",
+  "status": "experimental",
+  "language": "Swift",
+  "icon": "https://raw.githubusercontent.com/iamjason/kaepora-site/main/assets/icon.png",
+  "platforms": ["macos"]
+}
