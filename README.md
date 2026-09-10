@@ -17,7 +17,7 @@ Kaepora discovers installed browsers, remembers your selection, and can also for
 
 ## Availability
 
-Kaepora is **experimental** and requires **macOS 15 or later**. A public download is not available yet. Release downloads will be published in this repository when ready.
+Kaepora is **experimental** and requires **macOS 15 or later**. Visit the [website](https://iamjason.github.io/kaepora-site/) for availability and the latest download. Published builds are signed with Developer ID and notarized by Apple.
 
 This repository contains Kaepora's public information, artwork, and Compendium manifest. The application source is maintained separately.
 
@@ -26,3 +26,9 @@ This repository contains Kaepora's public information, artwork, and Compendium m
 Named for Kaepora Gaebora, the owl who offers guidance in *Ocarina of Time*, Kaepora joins Deku and Korok in the [Hyrule Compendium](https://iamjason.github.io/hyrule-compendium-site/).
 
 The Compendium discovers this repository through the `hyrule-tool` topic and uses [`hyrule.json`](hyrule.json) for its listing. Published releases will appear in the Compendium on its next refresh.
+
+## Website publishing
+
+This is a static GitHub Pages site served from `main` at the repository root, matching Deku and Korok. `.nojekyll` keeps the HTML and CSS unchanged.
+
+From the separate Kaepora application checkout, `./kaepora update-site` refreshes the download block from the latest public release, and `./kaepora deploy` commits website changes, pushes them, and verifies the exact page is live. `./kaepora release [major|minor|patch|none]` builds, signs, notarizes, publishes the ZIP here, then updates and deploys the site. The updater reads this repository’s latest GitHub release.

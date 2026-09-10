@@ -5,6 +5,9 @@
   "tagline": "Sends each link to the browser you choose from your menu bar.",
   "status": "experimental",
   "language": "Swift",
-  "icon": "https://raw.githubusercontent.com/iamjason/kaepora-site/main/assets/icon.png",
-  "platforms": ["macos"]
+  "icon": "https://iamjason.github.io/kaepora-site/assets/icon.png",
+  "platforms": [
+    "macos"
+  ],
+  "docs": "https://iamjason.github.io/kaepora-site/"
 }
