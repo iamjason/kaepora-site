@@ -32,3 +32,7 @@ The Compendium discovers this repository through the `hyrule-tool` topic and use
 This is a static GitHub Pages site served from `main` at the repository root, matching Deku and Korok. `.nojekyll` keeps the HTML and CSS unchanged.
 
 From the separate Kaepora application checkout, `./kaepora update-site` refreshes the download block from the latest public release, and `./kaepora deploy` commits website changes, pushes them, and verifies the exact page is live. `./kaepora release [major|minor|patch|none]` builds, signs, notarizes, publishes the ZIP here, then updates and deploys the site. The updater reads this repository’s latest GitHub release.
+
+## Usage statistics
+
+This site records anonymous usage statistics: page views, download clicks and a daily visitor count derived from a hash of your IP address and browser. No cookies, no personal data, nothing stored in your browser. The collector is [Gossip Stone](https://github.com/iamjason/gossip-stone-swift#what-is-sent).
